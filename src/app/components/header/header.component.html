@@ -1,0 +1,18 @@
+<header>
+    <app-header-item 
+        class="main" 
+        [name]="list.name"
+        routerLink="" routerLinkActive="active"
+    ></app-header-item>
+    
+    <app-header-item 
+        routerLink="/about" 
+        routerLinkActive="active" 
+        [name]="list.about"
+    ></app-header-item>
+
+    <app-header-item [name]="list.work"></app-header-item>
+    <app-header-item [name]="list.my_skills"></app-header-item>
+    <app-header-item [name]="list.contact"></app-header-item>
+    <app-header-item class=""></app-header-item>    
+</header>

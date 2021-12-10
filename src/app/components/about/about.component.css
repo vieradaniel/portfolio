@@ -1,0 +1,24 @@
+.main{
+    margin-left:13rem;
+    padding:6rem 2rem;
+    height:100vh;
+    background-color:#181818;
+    color:#fff;
+
+}
+
+h1{
+    font-size:5rem;
+}
+p{
+    margin-top:1rem;
+    color:#909096;
+
+}
+button{
+    margin-top:1rem;
+    padding:1rem 4rem;
+    color:#08FDD8;
+    background-color:#181818;
+    border-color: #08FDD8;
+}
