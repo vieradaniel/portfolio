@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
   selector: 'app-work',
@@ -6,28 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./work.component.css']
 })
 export class WorkComponent implements OnInit {
-
-  constructor() { }
+  myPortfolio:any;
+  constructor(private portfolioData:PortfolioService) { }
 
   ngOnInit(): void {
+    this.portfolioData.getData().subscribe(data =>{
+      console.log(data);
+      this.myPortfolio = data;
+    });
   }
 
-  myProjects=[{
-    pokeProject:{
-      name:"Pokemon Battle Name",
-      description: "technology web components",
-      url:"https://vieradaniel.github.io/DD-TrabajoFinal-Frontend2020/",
-      image:"https://miro.medium.com/max/1400/1*j7dwLFVWjLVRPQFTjMsmgg.jpeg"
-
-    },
-    github:{
-      name:"Github clone",
-      description: "static github clone",
-      url:"https://vieradaniel.github.io/DD-TrabajoIntermedio2020-FE/",
-      image:"https://logos-marcas.com/wp-content/uploads/2020/11/GitHub-Logo.png"
-    }
-  
-  }]
+ 
 
   buttonTitle={
     pokeBattle:"Play",
