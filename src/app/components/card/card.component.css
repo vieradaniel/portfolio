@@ -1,0 +1,17 @@
+
+.card{
+    margin-bottom: 1rem;
+    color:black;
+    max-width: 24rem;
+}
+.card img{
+    max-width: 24rem;
+    max-height: 12rem;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+

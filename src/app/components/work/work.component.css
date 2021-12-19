@@ -1,9 +1,9 @@
 .main{
     
-    padding:6rem 2rem;
-    height:100vh;
+    padding:6rem 2rem;    
     background-color:#181818;
     color:#fff;
+    
 
 }
 button{
@@ -13,21 +13,29 @@ button{
     background-color:#181818;
     border-color: #08FDD8;
 }
-
+h1{
+    font-size:3rem;
+    text-align: center;
+    margin-bottom:1rem;
+}
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
     .main{
         margin-left:13rem;
         padding:6rem 2rem;
-        height:100vh;
         background-color:#181818;
-        
+        color:#fff;
+        height:100vh;
     
     }
-    
+    .card-list{
+        display:flex;
+        justify-content:space-around;
+    }
     h1{
         font-size:5rem;
+        
     }
     p{
         margin-top:1rem;
@@ -42,4 +50,5 @@ button{
         border-color: #08FDD8;
     }
   }
+
 

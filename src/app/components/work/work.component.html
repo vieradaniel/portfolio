@@ -1,0 +1,19 @@
+<section class="main">
+    <h1>WORK</h1>
+    <div class="card-list"> 
+        <app-card [name]="myProjects[0].pokeProject.name" 
+                [description]="myProjects[0].pokeProject.description"
+                [url]="myProjects[0].pokeProject.url"
+                [image]="myProjects[0].pokeProject.image"
+                [title]="buttonTitle.pokeBattle"
+        ></app-card>
+
+        <app-card [name]="myProjects[0].github.name" 
+                [description]="myProjects[0].github.description"
+                [url]="myProjects[0].github.url"
+                [image]="myProjects[0].github.image"
+                [title]="buttonTitle.github"
+        ></app-card>
+    </div> 
+</section>
+

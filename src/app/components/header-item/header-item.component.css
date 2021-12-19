@@ -2,7 +2,12 @@
     color:#909096;
     padding:1rem;
     border-bottom:1px solid #282828;
-    background-color:#181818;
     display:block;
-    cursor:pointer;   
+    cursor:pointer;
+    text-align: center;        
 }
+
+@media only screen and (min-width: 768px) {
+    
+  }
+
